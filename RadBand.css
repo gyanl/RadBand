@@ -1,1 +1,13 @@
-/* CSS declarations go here */
+body {
+    background-color: rebeccapurple;
+}
+
+h1 {
+    color: white;
+    margin-left: 20px;
+}
+
+p {
+    color: white;
+    margin-left: 40px;
+}
