@@ -1,4 +1,5 @@
 <head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
   <title>RadBand</title>
 
 <link rel="stylesheet" type="text/css" href="radband.css">
@@ -6,12 +7,23 @@
 
 <body>
   <h1>Welcome to RadBand</h1>
+  <ul>
 
-  {{> hello}}
+    {{#each tasks}}
+
+      {{> task}}
+
+    {{/each}}
+
+  </ul>
 </body>
 
 <template name="hello">
   <p>Your one stop shop to get a cool name for your next band!</p>
 <p><button>click me if you wanna</button></p>
   <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+<template name="task">
+  <li>{{text}}</li>
 </template>

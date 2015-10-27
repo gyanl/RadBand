@@ -1,13 +1,31 @@
 body {
-    background-color: rebeccapurple;
+      background-image: linear-gradient(to bottom,#FAFAFA, #DFDFDF 100%);
 }
 
 h1 {
-    color: white;
+    color: #FB5C5C;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     margin-left: 20px;
 }
 
 p {
     color: white;
     margin-left: 40px;
+}
+
+li {
+  font-family: 'Roboto', sans-serif;
+  color: #404040;
+  font-weight: 400;
+  position: relative;
+  list-style: outside;
+  padding: 13px;
+  border-bottom: #eee solid 1px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  background: white;
 }
