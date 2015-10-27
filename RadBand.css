@@ -1,13 +1,14 @@
 body {
       background-image: linear-gradient(to bottom,#FAFAFA, #DFDFDF 100%);
+      padding-left: 50px;
 }
 
 h1 {
     color: #FB5C5C;
+    font-size: 48px;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    margin-left: 20px;
-}
+  }
 
 p {
     color: white;
@@ -19,8 +20,9 @@ li {
   color: #404040;
   font-weight: 400;
   position: relative;
-  list-style: outside;
+  list-style: none;
   padding: 13px;
+  padding-left: 30px;
   border-bottom: #eee solid 1px;
 }
 
@@ -28,4 +30,21 @@ ul {
   margin: 0;
   padding: 0;
   background: white;
+}
+input[type=text] {
+    padding: 2px;
+    padding-left: 12px;
+    height: 30px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14px;
+}
+.advancedSearchTextbox {
+    width: 526px;
+    margin-right: -4px;
 }
