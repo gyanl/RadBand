@@ -33,42 +33,10 @@
     </div>
     <main class="mdl-layout__content">
       <div class="page-content">
-        <center>
-          <form class="new task" action="#">
-            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-              <input class="mdl-textfield__input" type="text" id="sample3" />
-              <label class="mdl-textfield__label" for="sample3">Enter Radjective</label>
-            </div>
-          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Add Radjective</button>
-          </form>
-          <p></p>
-            <table class="mdl-data-table mdl-shadow--2dp">
-          <thead>
-            <tr>
-        Radjectives
-          </tr>
-          </thead>
-          <tbody>
-            {{#each tasks}}
-              {{> task}}
-            {{/each}}
-          </tbody>
-        </table>
 
-        </center>
-
-        <!-- Your content goes here --></div>
+        <!-- Your content goes here -->
+        <div class="bigtext">"adjective" "noun"</div>
+      </div>
     </main>
   </div>
 </body>
-
-<template name="hello">
-  <p>Your one stop shop to get a cool name for your next band!</p>
-  <p><button>click me if you wanna</button></p>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="task">
-  <tr>
-        <td class="mdl-data-table__cell--non-numeric">{{text}}</td>
-    </tr></template>

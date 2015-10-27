@@ -14,39 +14,29 @@ if (Meteor.isClient) {
     tasks: function () {
       // Show newest tasks at the top
 
-return Tasks.find({}, {sort: {createdAt: -1}});
+return Tasks.find({}, {sort: {text: 1}});
     }
   });
-  Template.body.events({
-
-    "submit .new-task": function (event) {
-
-      // Prevent default browser form submit
-
-      event.preventDefault();
 
 
+   Template.body.events({
 
-      // Get value from form element
+     "submit .new-task": function (event) {
+       // Prevent default browser form submit
+       event.preventDefault();
+       // Get value from form element
 
-      var text = event.target.text.value;
+       var text = event.target.text.value;
+       // Insert a task into the collection
+       Tasks.insert({
+         text: text,
+         createdAt: new Date() // current time
 
-
-
-      // Insert a task into the collection
-
-      Tasks.insert({
-
-        text: text,
-
-        createdAt: new Date() // current time
-
-      });
+       });
 
 
 
-      // Clear form
-
+       // Clear form
       event.target.text.value = "";
 
     }
