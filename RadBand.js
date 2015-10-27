@@ -42,12 +42,12 @@ return Tasks.find({}, {sort: {text: 1}});
     }
 
   });
-  Template.hello.events({
+/*  Template.hello.events({
     'click button': function () {
       // increment the counter when button is clicked
       Session.set('counter', Session.get('counter') + 1);
     }
-  });
+  }); */
 }
 
 if (Meteor.isServer) {
