@@ -1,25 +1,63 @@
 <head>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
   <title>RadBand</title>
-
-<link rel="stylesheet" type="text/css" href="radband.css">
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.red-indigo.min.css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-  <h1>Welcome to RadBand</h1>
-  <form class="new-task">
-  <input type="text" name="text" placeholder="+Add Radjective" class="advancedSearchTextBox" />
-  <p></p>
-  </form>
-  <ul>
+  <!-- Always shows a header, even in smaller screens. -->
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Welcome to Radband</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Title</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content"><!-- Your content goes here --></div>
+    </main>
+  </div>
 
+<center>
+  <p>
+    <table class="mdl-data-table mdl-shadow--2dp">
+  <thead>
+    <tr>
+Radjectives
+  </tr>
+  </thead>
+  <tbody>
     {{#each tasks}}
-
       {{> task}}
-
     {{/each}}
-
-  </ul>
+  </tbody>
+</table>
+<form class="new task" action="#">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="sample3" />
+    <label class="mdl-textfield__label" for="sample3">Enter Radjective</label>
+  </div>
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Add Radjective</button>
+</form>
+</center>
 </body>
 
 <template name="hello">
@@ -29,5 +67,6 @@
 </template>
 
 <template name="task">
-  <li>{{text}}</li>
-</template>
+  <tr>
+        <td class="mdl-data-table__cell--non-numeric">{{text}}</td>
+      </tr></template>
