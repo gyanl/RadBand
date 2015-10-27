@@ -1,6 +1,8 @@
 body {
       background-image: linear-gradient(to bottom,#FAFAFA, #DFDFDF 100%);
+      background-attachment: fixed;
       padding-left: 50px;
+      padding-right: 50px;
 }
 
 h1 {
