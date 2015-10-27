@@ -3,6 +3,9 @@
   font-size: 48px;
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  text-align: center;
-  vertical-align: middle;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
