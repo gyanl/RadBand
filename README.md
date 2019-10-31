@@ -7,4 +7,4 @@ http://gyanl.github.io/RadBand/
 
 ## Screenshot
 
-[Preview](Screenshots/Alpha\ 1.png)
+![Preview](Screenshots/Alpha%201.png)
